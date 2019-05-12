@@ -10,6 +10,7 @@ import { OrderItemsComponent } from './orders/order-items/order-items.component'
 import { OrderService } from './shared/order.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     AngularFontAwesomeModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   entryComponents:[OrderItemsComponent],
   providers: [OrderService],
